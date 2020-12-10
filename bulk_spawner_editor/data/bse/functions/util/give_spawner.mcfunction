@@ -8,7 +8,7 @@ execute store result score requested_id= bse.main run data get storage bse:main 
 execute store result storage bse:main item.tag.BlockEntityTag.LastExecution long 1 run scoreboard players get requested_id= bse.main
 
 #generating name
-data modify block 29999999 1 6452069 Text1 set value '[{"text":"","italic":false},{"text":"Place Spawner","color":"yellow"}," ",{"translate":"[ID: %s, V: %s]","with":[{"score":{"objective":"bse.main","name":"requested_id="},"color":"gold"},{"score":{"objective":"bse.main","name":"current_version="},"color":"gold"}],"color":"gray"}]'
+data modify block 29999999 1 6452069 Text1 set value '[{"text":"","italic":false},{"text":"Place Spawner","color":"yellow"}," ",{"translate":"[ID: %s]","with":[{"score":{"objective":"bse.main","name":"requested_id="},"color":"gold"}],"color":"gray"}]'
 data modify storage bse:main item.tag.display.Name set from block 29999999 1 6452069 Text1
 
 ##generating general data lore
