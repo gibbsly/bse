@@ -1,0 +1,31 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player": {
+								"gamemode": "creative"
+							}
+						}
+					}
+				],
+				"item": {
+					"item": "minecraft:debug_stick"
+				},
+				"location": {
+					"block": {
+						"block": "minecraft:spawner"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bse:use_tool"
+	}
+}

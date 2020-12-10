@@ -1,0 +1,8 @@
+#resetting values
+data modify entity @s Age set value 0
+data modify entity @s CustomNameVisible set value 0b
+
+#checks
+execute unless score @s bse.version = current_version= bse.main if block ~ ~ ~ spawner run function bse:spawners/update
+execute unless entity @a[distance=..10] if block ~ ~ ~ air run kill @s
+execute if entity @a[distance=..10,predicate=bse:has_tool,gamemode=creative] run data modify entity @s CustomNameVisible set value 1b
