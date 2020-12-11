@@ -2,7 +2,7 @@
 
 This is a utility that adds some additional functionality to the debug stick when used on spawners. [You can obtain a debug stick with `/give @s minecraft:debug_stick`] 
 
-I have a video explaining what this does and how to use it [here] - (hello to those who are here before the video is uploaded)
+I have a video explaining what this does and how to use it [here](https://youtu.be/xoJxAN-UPQQ)
 
 ## With this pack installed, right clicking a spawner with a debug stick will do a few different things.
 ### Initialization
