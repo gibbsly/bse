@@ -46,7 +46,7 @@ There are a few errors that I check for in this pack, I have causes and solution
 * Maximum command chain Limit reached - This error probably will never happen, but if it does it means that there might be too many spawners int the system, or you modified the maxCommandChainLength gamerule to a lower value than default, if you get this error there will be a chat message that has a command you can click to change it to a recommended value
 
 ### Uninstall
-to remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack
+to remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
 
 ### Use
 This is a free to use utlity that is made mostly for mapmaking development, it is optional to credit me.
