@@ -24,7 +24,7 @@ You can modify spawners by either placing a new one with setblock, or doing data
 
 ## Other information
 ### Spawner item format
-The foramt that the spawner item that you are given is listed below
+The format that the spawner item that you are given is listed below
 * General properties: (spawner configuration values)
   * Player Range: X (the distance a player has to be from the spawner to activate it)
   * Spawn Range: X (the maximum distance from the spawner an entity it spawns can spawn)
@@ -39,14 +39,14 @@ The foramt that the spawner item that you are given is listed below
 ### Problems/Feedback/Errors
 If you have any problems or feedback, file an issue on this repository and I will try to get it resolved as soon as I can.,
 
-If you have anything you want added I can see if I can make it work, but I will not guarantee any new features. 
+If you have anything you want to be added I can see if I can make it work, but I will not guarantee any new features. 
 
 There are a few errors that I check for in this pack, I have causes and solutions listed here
 * Couldn't locate spawner! Try again - This error occurs when you are either too far away from a spawner, or are aiming at an odd angle so the raycast that locates a spawner doesn't actually hit it. If you get this error, just get closer to the spawner, or aim more in the center of the block
 * Maximum command chain Limit reached - This error probably will never happen, but if it does it means that there might be too many spawners int the system, or you modified the maxCommandChainLength gamerule to a lower value than default, if you get this error there will be a chat message that has a command you can click to change it to a recommended value
 
 ### Uninstall
-to remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
+To remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
 
 ### Use
-This is a free to use utlity that is made mostly for mapmaking development, it is optional to credit me.
+This is a free to use utility that is made mostly for mapmaking development, it is optional to credit me.
