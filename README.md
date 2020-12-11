@@ -2,7 +2,7 @@
 
 This is a utility that adds some additional functionality to the debug stick when used on spawners. [You can obtain a debug stick with `/give @s minecraft:debug_stick`] 
 
-I have a video explaining what this does and how to use it [here]
+I have a video explaining what this does and how to use it [here] - (hello to those who are here before the video is uploaded)
 
 ## With this pack installed, right clicking a spawner with a debug stick will do a few different things.
 ### Initialization
@@ -12,10 +12,10 @@ If there is an identical spawner in the system already, it will initialize this 
 
 The spawner will gain a nametag that displays the ID. The text is visible if you are within 10 blocks of it with a debug stick in your mainhand or offhand.
 
-You will also receive a command block that can place a spawner with that ID, the lore of the command block has various details of the spawner it will place. [spawner item format here]
+You will also receive a command block that can place a spawner with that ID, the lore of the command block has various details of the spawner it will place. [spawner item format here](https://github.com/gibbsly/bse#spawner-item-format)
 
 ### Give
-If you right click an initialized spawner it will give you the command block to place a new one, what that command block looks like is [here]
+If you right click an initialized spawner it will give you the command block to place a new one, what that command block looks like is [here](https://github.com/gibbsly/bse#spawner-item-format)
 
 ### Update
 If you right click an initialized spawner while sneaking, you can update all spawners of that id of to match this one. 
