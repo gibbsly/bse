@@ -1,5 +1,11 @@
 # Bulk Spawner Editor Utility
 
+## **WARNING:** Spawner loot table
+This pack modifies the spawer loot table to drop an item with some data on it. If you modify the spawner loot table in any other datapack, I *strongly* advise you remove or disable that while using this utility. 
+
+The [search function](https://github.com/gibbsly/bse#search-function) relies on that loot table, and if you have a loot table that overrides the one this pack uses; running the search function will destroy all the spawners it finds.
+
+## General information
 This is a utility that adds some additional functionality to the debug stick when used on spawners. [You can obtain a debug stick with `/give @s minecraft:debug_stick`] 
 
 I have a video explaining what this does and how to use it [here](https://youtu.be/xoJxAN-UPQQ)
@@ -13,10 +19,10 @@ If there is an identical spawner in the system already, it will initialize this 
 
 The spawner will gain a nametag that displays the ID. The text is visible if you are within 10 blocks of it with a debug stick in your mainhand or offhand.
 
-You will also receive a command block that can place a spawner with that ID, the lore of the command block has various details of the spawner it will place. [spawner item format here](https://github.com/gibbsly/bse#spawner-item-format)
+You will also receive a command block that can place a spawner with that ID, the lore of the command block has various details of the spawner it will place. [[spawner item format here]](https://github.com/gibbsly/bse#spawner-item-format)
 
 ### Give
-If you right click an initialized spawner it will give you the command block to place a new one, what that command block looks like is [here](https://github.com/gibbsly/bse#spawner-item-format)
+If you right click an initialized spawner it will give you the command block to place a new one. [[spawner item format here]](https://github.com/gibbsly/bse#spawner-item-format)
 
 ### Update
 If you right click an initialized spawner while sneaking, you can update all spawners of that id of to match this one. 
@@ -56,7 +62,7 @@ There are a few errors that I check for in this pack, I have causes and solution
 ### Search function
 If you want to find a large amount of spawners, you can run the search function by either running the function `bse:search` directly, or by [triggering a request](https://github.com/gibbsly/bse#request-trigger) at value -53.
 
-The search function searches a 9x9 chunk area centered on you for any spawners. Any spawners it finds that aren't registered already will be added to the system. A chat message will be sent with the position and ID of all spawners registered.
+The search function searches a 9x9 chunk area, centered on you, for spawners. Any spawners it finds that aren't already registered will be added to the system. A chat message will be sent with the position and ID of all spawners registered.
 
 ### Uninstall
 To remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
