@@ -1,6 +1,5 @@
 #counting layer
 execute store result score count= bse.search.main run clone ~ ~ ~ ~143 ~ ~143 ~ ~ ~ filtered minecraft:spawner move
-scoreboard players operation total= bse.search.main += count= bse.search.main
 
 #running layer_found if any spawners on this layer
 execute if score count= bse.search.main matches 1.. run function bse:search/seek/layer_found
