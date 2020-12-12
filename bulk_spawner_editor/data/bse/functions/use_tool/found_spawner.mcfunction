@@ -1,4 +1,4 @@
-#temp
+#feedback particle
 particle flash
 
 #determining weather to create a new spawner, update a current one, or give selected one

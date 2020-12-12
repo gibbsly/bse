@@ -4,7 +4,8 @@ This is a utility that adds some additional functionality to the debug stick whe
 
 I have a video explaining what this does and how to use it [here](https://youtu.be/xoJxAN-UPQQ)
 
-## With this pack installed, right clicking a spawner with a debug stick will do a few different things.
+## Using a debug stick on a spawner
+With this pack installed, right clicking a spawner with a debug stick will do a few different things.
 ### Initialization
 If you haven't right clicked the spawner yet, it will initialize the spawner into the system.
 
@@ -21,6 +22,13 @@ If you right click an initialized spawner it will give you the command block to 
 If you right click an initialized spawner while sneaking, you can update all spawners of that id of to match this one. 
 
 You can modify spawners by either placing a new one with setblock, or doing data modify/merge. The marker will stay in the world as long as you are within 10 blocks of where the spawner used to be, so you can break the spawner block to replace it if needed. 
+
+## Request trigger
+There are a few things you can activate by triggering bse.request and setting it to a value
+### Give spawner
+If you trigger a request to a valid spawner ID, you will receive a [command block to place a spawner with that ID](https://github.com/gibbsly/bse#spawner-item-format)
+### Search
+If you trigger the value -53 you will run the [search function](https://github.com/gibbsly/bse#search-function)
 
 ## Other information
 ### Spawner item format
@@ -44,6 +52,11 @@ If you have anything you want to be added I can see if I can make it work, but I
 There are a few errors that I check for in this pack, I have causes and solutions listed here
 * Couldn't locate spawner! Try again - This error occurs when you are either too far away from a spawner, or are aiming at an odd angle so the raycast that locates a spawner doesn't actually hit it. If you get this error, just get closer to the spawner, or aim more in the center of the block
 * Maximum command chain Limit reached - This error probably will never happen, but if it does it means that there might be too many spawners int the system, or you modified the maxCommandChainLength gamerule to a lower value than default, if you get this error there will be a chat message that has a command you can click to change it to a recommended value
+
+### Search function
+If you want to find a large amount of spawners, you can run the search function by either running the function `bse:search` directly, or by [triggering a request](https://github.com/gibbsly/bse#request-trigger) at value -53.
+
+The search function searches a 9x9 chunk area centered on you for any spawners. Any spawners it finds that aren't registered already will be added to the system. A chat message will be sent with the position and ID of all spawners registered.
 
 ### Uninstall
 To remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
