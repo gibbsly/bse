@@ -19,5 +19,5 @@ execute store result entity 627365-0-0-0-1 Pos[2] double 1 run scoreboard player
 data modify entity 627365-0-0-0-1 Pos[1] set value 0d
 
 #running seek loop
-execute at 627365-0-0-0-1 run function bse:search/seek/loop
+execute as 627365-0-0-0-1 at @s run function bse:search/seek/loop
 kill 627365-0-0-0-1

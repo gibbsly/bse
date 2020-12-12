@@ -22,4 +22,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=bse.spawner.new,limit=1] at @
 execute if score stick_use= bse.main matches 0 at @s run function bse:util/give_spawner
 
 #feedback if run in a command block
-execute unless entity @s run tellraw @a ["",{"text":"[BSE]:","color":"yellow","bold":true}," Found a spawner at ",{"translate":"[%s, %s, %s]","color":"green","with":[{"nbt":"x","block":"~ ~ ~"},{"nbt":"y","block":"~ ~ ~"},{"nbt":"z","block":"~ ~ ~"}]},", registering to ID ",{"score":{"objective":"bse.main","name":"requested_id="},"color":"gold"}]
+execute unless entity @s[type=player] run tellraw @a ["",{"text":"[BSE]:","color":"yellow","bold":true}," Found a spawner at ",{"translate":"[%s, %s, %s]","color":"green","with":[{"nbt":"x","block":"~ ~ ~"},{"nbt":"y","block":"~ ~ ~"},{"nbt":"z","block":"~ ~ ~"}]},", registering to ID ",{"score":{"objective":"bse.main","name":"requested_id="},"color":"gold"}]
