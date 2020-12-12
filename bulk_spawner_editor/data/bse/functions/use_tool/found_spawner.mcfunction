@@ -9,4 +9,4 @@ execute if score stick_use= bse.main matches 2 if predicate bse:alt run scoreboa
 #running create/update/give
 execute if score stick_use= bse.main matches 0 run function bse:use_tool/create_new
 execute if score stick_use= bse.main matches 1 run function bse:use_tool/update_existing
-execute if score stick_use= bse.main matches 2 run function bse:use_tool/give_existing
+execute if score stick_use= bse.main matches 2 if entity @s[type=player] run function bse:use_tool/give_existing
