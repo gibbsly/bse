@@ -59,7 +59,8 @@ There are a few errors that I check for in this pack, I have causes and solution
 * Couldn't locate spawner! Try again - This error occurs when you are either too far away from a spawner, or are aiming at an odd angle so the raycast that locates a spawner doesn't actually hit it. If you get this error, just get closer to the spawner, or aim more in the center of the block
 * Maximum command chain Limit reached - This error probably will never happen, but if it does it means that there might be too many spawners int the system, or you modified the maxCommandChainLength gamerule to a lower value than default, if you get this error there will be a chat message that has a command you can click to change it to a recommended value
 
-### Search function [[Read warning]](https://github.com/gibbsly/bse#warning-spawner-loot-table)
+### Search function
+##[[Read warning]](https://github.com/gibbsly/bse#warning-spawner-loot-table)
 If you want to find a large amount of spawners, you can run the search function by either running the function `bse:search` directly, or by [triggering a request](https://github.com/gibbsly/bse#request-trigger) at value -53.
 
 The search function searches a 9x9 chunk area, centered on you, for spawners. Any spawners it finds that aren't already registered will be added to the system. A chat message will be sent with the position and ID of all spawners registered.
