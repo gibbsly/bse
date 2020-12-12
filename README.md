@@ -24,7 +24,7 @@ If you right click an initialized spawner while sneaking, you can update all spa
 You can modify spawners by either placing a new one with setblock, or doing data modify/merge. The marker will stay in the world as long as you are within 10 blocks of where the spawner used to be, so you can break the spawner block to replace it if needed. 
 
 ## Request trigger
-There are a few things you can activate by triggering bse.request and setting it to a value
+There are a few things you can activate by triggering `bse.request` and setting it to a value
 ### Give spawner
 If you trigger a request to a valid spawner ID, you will receive a [command block to place a spawner with that ID](https://github.com/gibbsly/bse#spawner-item-format)
 ### Search
