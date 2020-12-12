@@ -1,4 +1,5 @@
 #adding scoreboards
+scoreboard objectives add bse.request trigger
 scoreboard objectives add bse.version dummy
 scoreboard objectives add bse.main dummy
 scoreboard objectives add bse.id dummy
