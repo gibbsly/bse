@@ -66,3 +66,6 @@ To remove this pack from the world I recommend running the uninstall function (`
 
 ### Use
 This is a free to use utility that is made mostly for mapmaking development, it is optional to credit me.
+
+### Planned features
+- a large search function with a definable search area to register all spawners in defined rectangle
