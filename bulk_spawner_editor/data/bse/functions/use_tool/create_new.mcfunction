@@ -23,3 +23,4 @@ execute if entity @s[type=player] if score stick_use= bse.main matches 0 at @s r
 
 #feedback if run in a command block
 execute unless entity @s[type=player] run tellraw @a ["",{"text":"[BSE]:","color":"yellow","bold":true}," Found a spawner at ",{"translate":"[%s, %s, %s]","color":"green","with":[{"nbt":"x","block":"~ ~ ~"},{"nbt":"y","block":"~ ~ ~"},{"nbt":"z","block":"~ ~ ~"}]},", registering to ID ",{"score":{"objective":"bse.main","name":"requested_id="},"color":"gold"}]
+execute unless entity @s[type=player] run scoreboard players add total= bse.search.main 1
