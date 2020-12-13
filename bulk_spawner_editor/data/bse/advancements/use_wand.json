@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player": {
+								"gamemode": "creative"
+							}
+						}
+					}
+				],
+				"item": {
+					"item": "minecraft:debug_stick",
+					"nbt": "{bseWand:1b}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bse:use_wand"
+	}
+}
