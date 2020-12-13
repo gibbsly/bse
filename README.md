@@ -61,11 +61,15 @@ The search function searches a 9x9 chunk area, centered on you, for spawners. An
 
 I recommend you run this with a render distance of 10 or more.
 
+### Large search function
+There is also a large search function that will search a selected area for spawners to register. This can be run by either [triggering a request](https://github.com/gibbsly/bse#request-trigger) at value -19 or running `/function bse:large_search`. 
+
+When you run this for the first time you will be given a special debug stick called "BSE Wand". Using this item you can select an area to search by right clicking 2 positions, similar to how the world edit selection wand works. 
+
+Once you have made your selection you can click the message in chat that you receive when you receive the wand to scan your selection.  You can also just run the command `/function bse:large_search` or trigger a request at -19 again to run the scan. A chat message will be sent with the position and ID of all spawners registered. **This will remove all forceloaded chunks in your selection, so if you need chunks to stay forceloaded I advise you to not use this search method**
+
 ### Uninstall
 To remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
 
 ### Use
 This is a free to use utility that is made mostly for mapmaking development, it is optional to credit me.
-
-### Planned features
-- a large search function with a definable search area to register all spawners in defined rectangle
