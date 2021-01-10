@@ -1,10 +1,11 @@
-#adding selected spawner to current and removing extraneous data
+#adding selected spawner to current and removing extraneous data/fixing item data
 data modify storage bse:main current set from block ~ ~ ~
 data remove storage bse:main current.x
 data remove storage bse:main current.y
 data remove storage bse:main current.z
 data remove storage bse:main current.id
 data remove storage bse:main current.Delay
+function bse:use_tool/create_new/fix_tag
 
 #searching for duplicate values
 execute if data storage bse:main spawners[0] run function bse:util/find_dupe

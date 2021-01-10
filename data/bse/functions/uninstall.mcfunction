@@ -12,7 +12,9 @@ data remove storage bse:main current
 data remove storage bse:main spawners
 data remove storage bse:backup version
 data remove storage bse:backup spawners
-data remove storage bse:search current
+data remove storage bse:fix_tag current
+data remove storage bse:fix_tag potentials_in
+data remove storage bse:fix_tag potentials_out
 
 #clearing slow loop
 schedule clear bse:slow_loop
