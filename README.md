@@ -1,5 +1,7 @@
 # Bulk Spawner Editor Utility
 
+## This does not work in 1.17, I am working on a fix
+
 ## General information
 This is a utility that adds some additional functionality to the debug stick when used on spawners. [You can obtain a debug stick with `/give @s minecraft:debug_stick`] 
 
