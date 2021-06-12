@@ -15,11 +15,15 @@
 					}
 				],
 				"item": {
-					"item": "minecraft:debug_stick"
+					"items": [
+						"minecraft:debug_stick"
+					]
 				},
 				"location": {
 					"block": {
-						"block": "minecraft:spawner"
+						"blocks": [
+							"minecraft:spawner"
+						]
 					}
 				}
 			}

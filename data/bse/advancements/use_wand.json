@@ -15,8 +15,10 @@
 					}
 				],
 				"item": {
-					"item": "minecraft:debug_stick",
-					"nbt": "{bseWand:1b}"
+					"nbt": "{bseWand:1b}",
+					"items": [
+						"minecraft:debug_stick"
+					]
 				}
 			}
 		}
