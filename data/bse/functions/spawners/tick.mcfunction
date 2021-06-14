@@ -1,5 +1,5 @@
 #resetting values
-data merge entity @s {Age:0,CustomNameVisible:0b}
+data merge entity @s {Age:0,CustomNameVisible:0b,Duration:100}
 
 #checks
 execute unless score @s bse.id matches 0.. run kill @s

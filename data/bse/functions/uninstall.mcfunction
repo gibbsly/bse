@@ -1,5 +1,6 @@
 #removing scoreboards
 scoreboard objectives remove bse.id
+scoreboard objectives remove bse.use
 scoreboard objectives remove bse.main
 scoreboard objectives remove bse.version
 scoreboard objectives remove bse.search.main

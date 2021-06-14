@@ -1,4 +1,5 @@
 #adding scoreboards
+scoreboard objectives add bse.use minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add bse.search.main dummy
 scoreboard objectives add bse.request trigger
 scoreboard objectives add bse.version dummy

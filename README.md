@@ -1,20 +1,18 @@
 # Bulk Spawner Editor Utility
 
-## This does not work in 1.17, I am working on a fix
-
 ## General information
-This is a utility that adds some additional functionality to the debug stick when used on spawners. [You can obtain a debug stick with `/give @s minecraft:debug_stick`] 
+This is a utility that adds a way to register and edit spawners in bulk using a carrot on a stick. To get the tool that registers spawners, use the command `/trigger bse.request`, and you will receive a carrot on a stick called "BSE tool".
 
-I have a video explaining what this does and how to use it [here](https://youtu.be/mI8nApNMD48)
+I have a video explaining what this does and how to use it [here](https://youtu.be/mI8nApNMD48) - this is now outdated because this no longer uses a debug stick as the tool, but everything else is applicable.
 
-## Using a debug stick on a spawner
-With this pack installed, right clicking a spawner with a debug stick will do a few different things.
+## Using the BSE tool on a spawner
+With this pack installed, right clicking a spawner with the BSE tool will do a few different things.
 ### Initialization
 If you haven't right clicked the spawner yet, it will initialize the spawner into the system.
 
 If there is an identical spawner in the system already, it will initialize this spawner with that id.
 
-The spawner will gain a nametag that displays the ID. The text is visible if you are within 10 blocks of it with a debug stick in your mainhand or offhand.
+The spawner will gain a nametag that displays the ID. The text is visible if you are within 10 blocks of it with the bse tool in your mainhand or offhand.
 
 You will also receive a command block that can place a spawner with that ID, the lore of the command block has various details of the spawner it will place. [[spawner item format here]](https://github.com/gibbsly/bse#spawner-item-format)
 
@@ -66,7 +64,7 @@ I recommend you run this with a render distance of 10 or more.
 ### Large search function
 There is also a large search function that will search a selected area for spawners to register. This can be run by either [triggering a request](https://github.com/gibbsly/bse#request-trigger) at value -19 or running `/function bse:large_search`. 
 
-When you run this for the first time you will be given a special debug stick called "BSE Wand". Using this item you can select an area to search by right clicking 2 positions, similar to how the world edit selection wand works. 
+When you run this for the first time you will be given a special carrot on a stick called "BSE Wand". Using this item you can select an area to search by right clicking 2 positions, similar to how the world edit selection wand works. 
 
 Once you have made your selection you can click the message in chat that you receive when you receive the wand to scan your selection.  You can also just run the command `/function bse:large_search` or trigger a request at -19 again to run the scan. A chat message will be sent with the position and ID of all spawners registered. **This will remove all forceloaded chunks in your selection, so if you need chunks to stay forceloaded I advise you to not use this search method**
 

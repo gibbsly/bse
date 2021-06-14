@@ -16,7 +16,7 @@ execute if score stick_use= bse.main matches 0 run function bse:util/add_current
 #summong aec
 execute store result score requested_id= bse.main run data get storage bse:main current.SpawnerID
 data modify block 29999999 1 6452069 Text1 set value '{"translate":"Spawner ID: %s","with":[{"score":{"objective":"bse.main","name":"requested_id="}}],"color":"aqua"}'
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[bse.spawner,bse.spawner.new],Duration:100,CustomName:'"bse - new spawner"'}
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[bse.spawner,bse.spawner.new],Duration:10000,CustomName:'"bse - new spawner"'}
 execute as @e[type=minecraft:area_effect_cloud,tag=bse.spawner.new,limit=1] at @s run function bse:use_tool/new_marker
 
 #giving current spawner

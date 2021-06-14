@@ -3,3 +3,6 @@ execute unless score @s[gamemode=!survival,gamemode=!adventure] bse.request matc
 #trigger handling
 scoreboard players reset @s[gamemode=!creative,gamemode=!spectator] bse.request
 scoreboard players enable @s[gamemode=!survival,gamemode=!adventure] bse.request
+
+#selection tools
+execute if score @s bse.use matches 1.. run function bse:player/use
