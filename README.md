@@ -1,6 +1,6 @@
 # Bulk Spawner Editor Utility
 
-## This version is for 1.16 and does not work in 1.17, I have a [1.17 branch here](https://github.com/gibbsly/bse/blob/update-version-0.8)
+## This version is for 1.16 and does not work in 1.17, I have a [1.17 branch here](https://github.com/gibbsly/bse/tree/update-version-0.8)
 
 ## General information
 This is a utility that adds some additional functionality to the debug stick when used on spawners. [You can obtain a debug stick with `/give @s minecraft:debug_stick`] 
