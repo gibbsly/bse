@@ -5,5 +5,5 @@ data modify storage bse:main back append from storage bse:main spawners[0]
 data remove storage bse:main spawners[0]
 
 #loop
-scoreboard players remove requested_id= bse.main 1
-execute unless score requested_id= bse.main matches ..0 run function bse:util/scroll_to_requested_id
+execute store result score whatever_id= bse.main run data get storage bse:main spawners[0].SpawnerID
+execute unless score requested_id= bse.main = whatever_id= bse.main run function bse:util/scroll_to_requested_id

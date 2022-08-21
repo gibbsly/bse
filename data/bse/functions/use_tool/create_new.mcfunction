@@ -1,4 +1,5 @@
 #adding selected spawner to current and removing extraneous data/fixing item data
+data modify storage bse:main current set value {}
 data modify storage bse:main current set from block ~ ~ ~
 data remove storage bse:main current.x
 data remove storage bse:main current.y
