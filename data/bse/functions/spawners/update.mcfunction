@@ -5,6 +5,8 @@ scoreboard players operation requested_id= bse.main = @s bse.id
 execute unless score requested_id= bse.main matches ..0 run function bse:util/scroll_to_requested_id
 
 #updating value
+setblock ~ ~ ~ air
+setblock ~ ~ ~ spawner
 data modify block ~ ~ ~ {} merge from storage bse:main spawners[0]
 
 #restoring spawner array
