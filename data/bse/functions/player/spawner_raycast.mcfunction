@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ spawner align xyz positioned ~0.5 ~0.5 ~0.5 run function bse:player/spawner_raycast/found_spawner
+execute unless block ~ ~ ~ spawner if entity @s[distance=..7] positioned ^ ^ ^0.1 run function bse:player/spawner_raycast

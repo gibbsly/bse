@@ -1,0 +1,12 @@
+execute positioned ~00 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~01 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~02 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~03 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~04 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~05 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~06 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~07 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~08 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~09 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~10 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found
+execute positioned ~11 ~ ~ if block ~ ~ ~ spawner align xyz unless entity @e[dx=0,dy=0,dz=0,type=area_effect_cloud,tag=bse.marker] positioned ~0.5 ~0.5 ~0.5 run function bse:player/mark_spawners/found

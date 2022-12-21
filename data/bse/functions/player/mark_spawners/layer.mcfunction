@@ -1,0 +1,12 @@
+execute positioned ~ ~ ~00 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~01 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~02 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~03 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~04 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~05 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~06 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~07 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~08 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~09 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~10 run function bse:player/mark_spawners/row
+execute positioned ~ ~ ~11 run function bse:player/mark_spawners/row

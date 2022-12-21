@@ -4,10 +4,9 @@ execute if score @s bse.request matches -19 run function bse:large_search
 execute if score @s bse.request matches -53 run function bse:search
 
 #non specific value error
-execute if score @s bse.request matches -1 run tellraw @s ["",{"text":"[BSE]:","color":"yellow","bold":true}," ","Giving you the selection tool, right click a spawner to register it."]
-execute if score @s bse.request matches -1 run give @s minecraft:carrot_on_a_stick{bseTool:1b,display:{Name:'{"text":"BSE Tool","color":"light_purple","italic":false}'},Enchantments:[{lvl:1}]}
+#execute if score @s bse.request matches -1 run tellraw @s ["",{"text":"[BSE]:","color":"yellow","bold":true}," ",{"text":"Invalid request; please set a specific value","color":"red"},"\n ",{"text":"[/trigger bse.request set <spawner ID>]","color":"green","clickEvent":{"action":"suggest_command","value":"/trigger bse.request set 0"},"hoverEvent":{"action":"show_text","contents":"Click here to suggest an example"}}]
 
 #invalid range error
-execute if score @s bse.request matches -2147483648.. unless score @s bse.request matches -53 unless score @s bse.request matches -19 unless score @s bse.request matches -2.. run tellraw @s ["",{"text":"[BSE]:","color":"yellow","bold":true}," ",{"text":"Invalid request; unknown value","color":"red"}]
+execute if score @s bse.request matches -2147483648.. unless score @s bse.request matches -53 unless score @s bse.request matches -19 unless score @s bse.request matches 0.. run tellraw @s ["",{"text":"[BSE]:","color":"yellow","bold":true}," ",{"text":"Invalid request; unknown value","color":"red"},"\n ",{"text":"[/trigger bse.request set <spawner ID>]","color":"green","clickEvent":{"action":"suggest_command","value":"/trigger bse.request set 0"},"hoverEvent":{"action":"show_text","contents":{"text":"gives a spawner with the specified id","color":"gray"}}},"\n ",{"text":"[/trigger bse.request set -19]","color":"green","clickEvent":{"action":"suggest_command","value":"/trigger bse.request set -19"},"hoverEvent":{"action":"show_text","contents":{"text":"runs the large_search function","color":"gray"}}},"\n ",{"text":"[/trigger bse.request set -59]","color":"green","clickEvent":{"action":"suggest_command","value":"/trigger bse.request set -53"},"hoverEvent":{"action":"show_text","contents":{"text":"runs the search function","color":"gray"}}}]
 
 scoreboard players set @s bse.request -2
