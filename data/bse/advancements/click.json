@@ -1,0 +1,21 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:debug_stick"
+					]
+				},
+				"entity": {
+					"type": "minecraft:horse",
+					"nbt": "{Tags:[\"bse.horse\"]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bse:player/click"
+	}
+}
