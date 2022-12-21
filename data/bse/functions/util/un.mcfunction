@@ -8,3 +8,7 @@ execute if score spawner= bse.temp matches 0 run data modify entity @s CustomNam
 execute if score spawner= bse.temp matches 1 if score has_bse_id= bse.temp matches 0 run data modify entity @s CustomName set value '{"text":"Unregistered spawner","color":"red"}'
 execute if score has_bse_id= bse.temp matches 1 run data modify block 29999999 1 6452069 Text1 set value '{"translate":"Spawner ID: %s","with":[{"score":{"objective":"bse.temp","name":"bse_id="}}],"color":"aqua"}'
 execute if score has_bse_id= bse.temp matches 1 run data modify entity @s CustomName set from block 29999999 1 6452069 Text1
+
+#updating id score for tracking
+execute if score has_bse_id= bse.temp matches 1 run scoreboard players operation @s bse.id = bse_id= bse.temp
+execute if score has_bse_id= bse.temp matches 0 run scoreboard players set @s bse.id -1

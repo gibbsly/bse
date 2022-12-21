@@ -13,3 +13,6 @@ scoreboard players set las= bse.temp 0
 execute if score holding= bse.temp matches 1 anchored eyes positioned ^ ^ ^ run function bse:player/spawner_raycast
 execute if score las= bse.temp matches 1 positioned as 627365-0-0-0-1 run function bse:player/looking_at_spawner
 execute if score las= bse.temp matches 0 if entity @s[tag=bse.las] run function bse:player/stop_looking_at_spawner
+
+tag @s remove bse.click
+tag @s remove bse.attack
