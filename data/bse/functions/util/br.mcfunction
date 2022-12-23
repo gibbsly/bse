@@ -1,0 +1,2 @@
+data modify storage bse:main spawners set from storage bse:backup spawners
+tellraw @a {"text":"BSE ERROR; maxCommandChainLength hit while iterating through spawner array, restoring previous data...","color":"red"}
