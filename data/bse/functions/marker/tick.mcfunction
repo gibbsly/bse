@@ -5,15 +5,15 @@ execute store result score cnv= bse.temp store success entity @s CustomNameVisib
 execute store result score player= bse.temp if entity @a[distance=..16]
 execute store result score spawner= bse.temp if block ~ ~ ~ spawner
 
+#removing from list if spawner removed
+execute if score spawner= bse.temp matches 0 if score @s bse.id matches 0.. run function bse:spawner/remove_current_location_from_list
+
 #updating tracking id
 execute if score spawner= bse.temp matches 1 unless score @s bse.id matches -1.. if data block ~ ~ ~ SpawnData.entity."bse:id" store result score @s bse.id run data get block ~ ~ ~ SpawnData.entity."bse:id"
 execute if score spawner= bse.temp matches 1 unless score @s bse.id matches -1.. unless data block ~ ~ ~ SpawnData.entity."bse:id" run scoreboard players set @s bse.id -1
 
 #keeping name up to date 
 execute if score cnv= bse.temp matches 1 run function bse:util/un
-
-#removing from list if spawner removed
-execute if score spawner= bse.temp matches 0 if score @s bse.id matches 0.. run function bse:spawner/remove_current_location_from_list
 
 #keeping around if player nearby
 execute if score player= bse.temp matches 1.. run data modify entity @s Age set value 0
