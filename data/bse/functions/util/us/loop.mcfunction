@@ -6,21 +6,21 @@ execute store result storage bse:temp Pos[2] double 1 run data get storage bse:t
 data modify entity @s Pos set from storage bse:temp Pos
 
 #forceload handling
-scoreboard players set remove_forceload= bse.temp 0
-execute unless predicate bse:loaded run function bse:util/us/load
+execute at @s run scoreboard players set remove_forceload= bse.temp 0
+execute at @s unless predicate bse:loaded run function bse:util/us/load
 
 #init move to processed flag
 scoreboard players set mtp= bse.temp 0
 
 #checking if this spawner needs to be updated
 scoreboard players set update= bse.temp 0
-execute if block ~ ~ ~ spawner if data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:util/us/verify_id
+execute at @s if block ~ ~ ~ spawner if data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:util/us/verify_id
 
 #updating if flagged to do so
-execute if score update= bse.temp matches 1 run function bse:util/us/update
+execute if score update= bse.temp matches 1 at @s run function bse:util/us/update
 
 #removing forceload if flagged to do so
-execute if score remove_forceload= bse.temp matches 1 run forceload remove ~ ~
+execute if score remove_forceload= bse.temp matches 1 at @s run forceload remove ~ ~
 
 #displaying progress
 scoreboard players add processed= bse.main 1
