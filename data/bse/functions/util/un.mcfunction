@@ -11,4 +11,3 @@ execute if score has_bse_id= bse.temp matches 1 run data modify entity @s Custom
 
 #updating id score for tracking
 execute if score has_bse_id= bse.temp matches 1 run scoreboard players operation @s bse.id = bse_id= bse.temp
-execute if score has_bse_id= bse.temp matches 0 run scoreboard players set @s bse.id -1
