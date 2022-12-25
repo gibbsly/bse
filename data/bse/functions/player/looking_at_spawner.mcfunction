@@ -36,5 +36,6 @@ execute if score @s bse.temp matches 14 run tp 627365-0-0-0-1E ~ ~-0.75 ~
 execute if score @s bse.temp matches 15 run tp 627365-0-0-0-1F ~ ~-0.75 ~
 
 #input actions
-execute if entity @s[tag=bse.attack] if score alt= bse.temp matches 1 run function bse:spawner/remove_current_location_from_list
+execute if entity @s[tag=bse.attack] if score alt= bse.temp matches 1 unless data storage bse:main spawners[0] run data remove block ~ ~ ~ SpawnData.entity."bse:id"
+execute if entity @s[tag=bse.attack] if score alt= bse.temp matches 1 if data storage bse:main spawners[0] run function bse:spawner/remove_current_location_from_list
 execute if entity @s[tag=bse.click] run function bse:player/click_spawner
