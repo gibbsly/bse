@@ -45,3 +45,4 @@ br - loads spawners array from bse:backup into bse:main
 rp - register this position by adding "bse:id" and adding pos to pos array, adds to selected spawner
 us - update all spawners in the selected spawner's positions array
 rcp - remove current position in 'bse:temp pos' from currently selected spawner positions array
+ps - places the currently selected spawner at this position

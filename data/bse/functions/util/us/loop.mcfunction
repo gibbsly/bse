@@ -31,7 +31,7 @@ execute if score remove_forceload= bse.temp matches 1 run forceload remove ~ ~
 
 #displaying progress
 scoreboard players add processed= bse.main 1
-title @a[gamemode=!survival,gamemode=!adventure] actionbar [{"text":"Updating Spawners: ","color":"aqua"},{"score":{"name":"processed=","objective":"bse.main"},"color":"green"},{"text":"/","color":"gray"},{"score":{"name":"total=","objective":"bse.main"},"color":"green"}]
+title @a[gamemode=!survival,gamemode=!adventure] actionbar [{"text":"Updating all spawners with the ID ","color":"aqua"},{"score":{"name":"id=","objective":"bse.main"},"color":"aqua"},{"text":" (","color":"gray"},{"score":{"name":"processed=","objective":"bse.main"},"color":"green"},{"text":"/","color":"gray"},{"score":{"name":"total=","objective":"bse.main"},"color":"green"},{"text":")","color":"gray"}]
 
 #moving to processed if flagged to do so
 execute if score mtp= bse.temp matches 1 run data modify storage bse:temp processed append from storage bse:temp positions[0]
