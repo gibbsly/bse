@@ -1,4 +1,4 @@
-#setting up positions array in temp and emptying output array
+#setting up positions array
 data modify storage bse:temp positions set value []
 data modify storage bse:temp positions append from storage bse:main spawners[].positions[]
 
@@ -10,5 +10,5 @@ scoreboard players set processed= bse.main 0
 execute unless entity 627365-0-f-0-1 run summon marker 29999999 0 6452069 {UUID:[I;6452069,15,0,1]}
 execute as 627365-0-f-0-1 run function bse:util/ua/start
 
-#restoring processed array
+#removing all positions 
 data modify storage bse:main spawners[].positions set value []

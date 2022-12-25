@@ -1,4 +1,4 @@
-#setting up positions array in temp and emptying output array
+#setting up positions array
 data modify storage bse:temp positions set value []
 data modify storage bse:temp positions append from storage bse:main spawners[].positions[]
 
