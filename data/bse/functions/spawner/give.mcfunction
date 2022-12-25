@@ -33,7 +33,9 @@ data modify storage bse:main item.tag.display.Lore append from block 29999999 1 
 data modify storage bse:main item.tag.display.Lore append value '[{"text":"List of spawnable entities:","color":"white","italic":false}]'
 
 ##generating spawn potentials lore
+data modify storage bse:main spt set value []
 data modify storage bse:main spt set from storage bse:main current.SpawnPotentials
+execute unless data storage bse:main spt[0] run data modify storage bse:main spt[].data set from storage bse:main current.SpawnData
 function bse:spawner/give/spawner_lore
 data remove storage bse:main temps
 data remove storage bse:main spt
