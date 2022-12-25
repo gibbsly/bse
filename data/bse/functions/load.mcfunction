@@ -10,6 +10,7 @@ scoreboard players set #installed bse.main 1
 execute unless score current_id= bse.main matches -2147483648.. run scoreboard players set current_id= bse.main -1
 execute unless score current_version= bse.main matches -2147483648.. run scoreboard players set current_version= bse.main 0
 scoreboard players set 10 bse.num 10
+scoreboard players set 16 bse.num 16
 
 #storage setup
 data merge storage bse:main {back:[],current:{},old:{},temp:{}}

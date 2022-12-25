@@ -11,6 +11,9 @@ rcp - remove current position in 'bse:temp pos' from currently selected spawner 
 ps - places the currently selected spawner at this position
 
 ##todo
+
+
+##outline
 entityless storage
 	store xyz pos of all spawners with id
 	on spawner update recursively all spawners in the position list with a pointer entity
