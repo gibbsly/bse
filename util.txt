@@ -1,3 +1,16 @@
+UTILITY FUNCTIONS
+gpa - generates an int array for a the execution position - outputs to storage bse:temp pos
+un - updates spawner's CustomName to reflect its current state
+si - marks the selected value to 1b
+ctc - copys current spawner at this pos to bse:main current and cleans it up
+fd - searches spawners array for a duplicate spawner matching the current value
+br - loads spawners array from bse:backup into bse:main
+rp - register this position by adding "bse:id" and adding pos to pos array, adds to selected spawner
+us - update all spawners in the selected spawner's positions array
+rcp - remove current position in 'bse:temp pos' from currently selected spawner positions array
+ps - places the currently selected spawner at this position
+
+##todo
 entityless storage
 	store xyz pos of all spawners with id
 	on spawner update recursively all spawners in the position list with a pointer entity
@@ -35,14 +48,3 @@ find spawner function
 	checks position first, if no spawners found at that pos, check data, if no data match found make new spawner
 	returns an id, and 0 if known, 1 if new spawner location, 2 if new spawner id
 	
-UTILITY FUNCTIONS
-gpa - generates an int array for a the execution position - outputs to storage bse:temp pos
-un - updates spawner's CustomName to reflect its current state
-si - marks the selected value to 1b
-ctc - copys current spawner at this pos to bse:main current and cleans it up
-fd - searches spawners array for a duplicate spawner matching the current value
-br - loads spawners array from bse:backup into bse:main
-rp - register this position by adding "bse:id" and adding pos to pos array, adds to selected spawner
-us - update all spawners in the selected spawner's positions array
-rcp - remove current position in 'bse:temp pos' from currently selected spawner positions array
-ps - places the currently selected spawner at this position
