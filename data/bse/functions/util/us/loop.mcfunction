@@ -1,10 +1,3 @@
-#scroll through each spawner, if a spawner location either doesn't have a spawner or has a non-matching id number spawner it removes this location from the list, this requires keeping the spawners scanned through and only copying matching spawners into the processed array
-
-#at every location, check if loaded, if not run forceload, always query if current location is marked to be forceloaded, if it is don't un-forceload it when you move to the next location
-
-#to update spawner setblock air then spawner then merge new data in
-##################
-
 #updating position
 data modify storage bse:temp Pos set value [0d,0d,0d]
 execute store result storage bse:temp Pos[0] double 1 run data get storage bse:temp positions[0][0]
