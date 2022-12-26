@@ -1,0 +1,2 @@
+execute unless block ~ ~ ~ #bse:search_ignore align xyz positioned ~0.5 ~0.5 ~0.5 run function bse:player/spawner_raycast/found_spawner
+execute if block ~ ~ ~ #bse:search_ignore if entity @s[distance=..7] positioned ^ ^ ^0.1 run function bse:player/search_raycast

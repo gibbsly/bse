@@ -3,6 +3,7 @@
 		"minecraft:air",
 		"minecraft:cave_air",
 		"minecraft:void_air",
-		"minecraft:structure_void"
+		"minecraft:water",
+		"minecraft:lava"
 	]
 }

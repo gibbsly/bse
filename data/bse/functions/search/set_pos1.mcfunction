@@ -1,2 +1,3 @@
 function bse:util/gpa
 data modify storage bse:search pos1 set from storage bse:temp pos
+tellraw @s[tag=bse.las] ["",{"text":"[BSE]:","color":"yellow","bold":true}," ",{"text":"Set search position 1 at ","color":"aqua"},[{"text":"(","color":"gray"},{"nbt":"pos1[0]","storage":"bse:search","color":"green"},", ",{"nbt":"pos1[1]","storage":"bse:search","color":"green"},", ",{"nbt":"pos1[2]","storage":"bse:search","color":"green"},")"],"."]

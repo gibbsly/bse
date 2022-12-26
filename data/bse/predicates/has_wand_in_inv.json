@@ -1,7 +1,0 @@
-{
-	"condition": "minecraft:entity_properties",
-	"entity": "this",
-	"predicate": {
-		"nbt": "{Inventory:[{id:\"minecraft:debug_stick\",tag:{bseWand:1b}}]}"
-	}
-}

@@ -1,5 +1,5 @@
 tag @s remove bse.las
-tag @s remove bse.tool
+tag @s remove bse.clock
 title @s actionbar ""
 
 execute if score @s bse.temp matches 00 run data merge entity 627365-0-0-0-10 {Pos:[29999999d,0d,6452069d]}

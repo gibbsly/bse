@@ -5,7 +5,8 @@
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:debug_stick"
+						"minecraft:debug_stick",
+						"minecraft:clock"
 					]
 				},
 				"entity": {
