@@ -7,3 +7,5 @@ function bse:util/fd
 execute if score fd_id= bse.main matches -1 run function bse:spawner/create_new
 ##marking as found id
 execute unless score fd_id= bse.main matches -1 run function bse:util/rp
+
+scoreboard players add found= bse.main 1

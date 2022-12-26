@@ -1,0 +1,16 @@
+execute positioned ~00 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~01 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~02 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~03 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~04 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~05 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~06 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~07 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~08 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~09 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~10 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~11 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~12 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~13 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~14 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
+execute positioned ~15 ~ ~ if block ~ ~ ~ spawner unless data block ~ ~ ~ SpawnData.entity."bse:id" run function bse:spawner/register
