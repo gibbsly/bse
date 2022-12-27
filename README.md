@@ -3,7 +3,7 @@
 ## General information
 This is a utility that adds some additional functionality to the debug stick when used on spawners. [You can obtain a debug stick with `/give @s minecraft:debug_stick`] 
 
-I have a video explaining what this does and how to use it [here](https://youtu.be/mI8nApNMD48) (Outdated somewhat, generally it is correct though)
+I have a video explaining what this does and how to use it [here](https://youtu.be/mI8nApNMD48). (Outdated somewhat, generally it is correct though)
 
 ## Using a debug stick on a spawner
 With this pack installed, right clicking a spawner with a debug stick will do a few different things.
@@ -26,11 +26,11 @@ You can modify spawners by either placing a new one with setblock, or doing data
 If you left click a spawner while sneaking it will remove that spawner from the registry of spawners with that ID. This allows you to un-register a spawner, change the spawner however you want and then re-register the spawner without having to go out of range of the marker entity.
 
 ## Request trigger
-There are a few things you can activate by triggering `bse.request` and setting it to a value
+There are a few things you can activate by triggering `bse.request` and setting it to a value.
 ### Give spawner
-If you trigger a request to a valid spawner ID, you will receive a [command block to place a spawner with that ID](https://github.com/gibbsly/bse/tree/entityless#spawner-item-format)
+If you trigger a request to a valid spawner ID, you will receive a [command block to place a spawner with that ID](https://github.com/gibbsly/bse/tree/entityless#spawner-item-format).
 ### Search
-If you trigger the value -53 you will run the [search function](https://github.com/gibbsly/bse/tree/entityless#search-function)
+If you trigger the value -53 you will run the [search function](https://github.com/gibbsly/bse/tree/entityless#search-function).
 
 ## Other information
 ### Spawner item format
@@ -49,7 +49,7 @@ The format that the spawner item that you are given is listed below
   * Max Block Light: X (the maximum block light that this mob can spawn in)
   * Max Sky Light: X (the maximum sky light that this mob can spawn in)
 ### Problems/Feedback/Errors
-If you have any problems or feedback, file an issue on this repository and I will try to get it resolved as soon as I can.,
+If you have any problems or feedback, file an issue on this repository and I will try to get it resolved as soon as I can.
 
 If you have anything you want to be added I can see if I can make it work, but I will not guarantee any new features. 
 
@@ -57,6 +57,12 @@ If you have anything you want to be added I can see if I can make it work, but I
 This searches a selected area for spawners, you can select the area you wish to search by using a clock. Left clicking a block with a clock will set the first position and right clicking a block with a clock will set the second position. 
 
 Once you have made your selection you can run the command `/function bse:large_search` or [trigger a request](https://github.com/gibbsly/bse/tree/entityless#request-trigger) at -59 again to run the scan. 
+
+### Prime all
+Running the function `bse:prime_all_spawners` sets the delay of all registered spawners to 0.
+
+### Unmarking all
+Running the function `bse:unmark_all_spawners` un-registeres all spawners, this probably isn't useful but is run during the uninstall function.
 
 ### Uninstall
 To remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
