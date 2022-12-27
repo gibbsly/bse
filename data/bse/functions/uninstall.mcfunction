@@ -9,15 +9,24 @@ scoreboard objectives remove bse.num
 scoreboard objectives remove bse.id
 
 #removing data
+data remove storage bse:main old
 data remove storage bse:main back
 data remove storage bse:main temp
 data remove storage bse:main current
 data remove storage bse:main spawners
 data remove storage bse:backup version
 data remove storage bse:backup spawners
+data remove storage bse:fix_tag temp
 data remove storage bse:fix_tag current
 data remove storage bse:fix_tag potentials_in
 data remove storage bse:fix_tag potentials_out
+data remove storage bse:temp processed
+data remove storage bse:temp Pos
+data remove storage bse:temp pos
+data remove storage bse:temp positions
+data remove storage bse:temp check
+data remove storage bse:temp marker_pos
+data remove storage bse:temp hold
 
 #removing horses
 schedule clear bse:spawn_horses
