@@ -1,53 +1,13 @@
 UTILITY FUNCTIONS
-gpa - generates an int array for a the execution position - outputs to storage bse:temp pos
-un - updates spawner's CustomName to reflect its current state
-si - marks the selected value to 1b
-ctc - copys current spawner at this pos to bse:main current and cleans it up
-fd - searches spawners array for a duplicate spawner matching the current value
-br - loads spawners array from bse:backup into bse:main
-rp - register this position by adding "bse:id" and adding pos to pos array, adds to selected spawner
-us - update all spawners in the selected spawner's positions array
-rcp - remove current position in 'bse:temp pos' from currently selected spawner positions array
-ps - places the currently selected spawner at this position
-
-##todo
-
-
-##outline
-entityless storage
-	store xyz pos of all spawners with id
-	on spawner update recursively all spawners in the position list with a pointer entity
-		if no spawner remove from list
-		on update remove spawner then place fresh one then write data onto it
-		
-on reg - 
-	scan all spawners to find duplicate data
-	if none found then add new
-		generate extended id object using base 10 extrapolation
-		write int id to 'SpawnData.entity."bse:id"'
-
-
-spawner array object data format {id:{1:0b,2:0b,3:0b,4:0b,5:0d,int:0},data:{<spawner data>},positions:[[I;x,y,z]],selected:0b}
-
-split ids into base 10, with 5 digits 
-9,999,999,999
-[
-	{sid:{1:1b,2:0b,3:0b},selected:0b},
-	{sid:{1:1b,2:4b,3:0b},selected:0b},
-	{sid:{1:3b,2:0b,3:3b},selected:0b},
-	{sid:{1:1b,2:1b,3:1b},selected:0b},
-	{sid:{1:5b,2:2b,3:0b},selected:0b}
-]
-/data modify storage test test[].selected set value 0b
-/data modify storage test test[{sid:{1:1b},selected:0b}].selected set value 1b
-/data modify storage test test[{sid:{2:4b},selected:1b}].selected set value 2b
-/data modify storage test test[{sid:{3:0b},selected:2b}].selected set value 3b
-/data get storage test test[{selected:3b}]
-
-pos arrays, do array override check to find id 
-[[I;1,2,3],[I;5,8,2],[I;2,4,1],[I;2,2,2]]
-
-find spawner function
-	checks position first, if no spawners found at that pos, check data, if no data match found make new spawner
-	returns an id, and 0 if known, 1 if new spawner location, 2 if new spawner id
-	
+gpa | generates an int array for a the execution position - outputs to storage bse:temp pos
+un  | updates spawner's CustomName to reflect its current state
+si  | marks the selected value to 1b
+ctc | copys current spawner at this pos to bse:main current and cleans it up
+fd  | searches spawners array for a duplicate spawner matching the current value
+br  | loads spawners array from bse:backup into bse:main
+rp  | register this position by adding "bse:id" and adding pos to pos array, adds to selected spawner
+us  | update all spawners in the selected spawner's positions array
+rcp | remove current position in 'bse:temp pos' from currently selected spawner positions array
+ps  | places the currently selected spawner at this position
+pa  | (prime_all_spawners) sets the delay of all registered spawners to 0
+ua  | (unmark_all_spawners) removes all positions arrays and removes all "bse:id" values on spawners
