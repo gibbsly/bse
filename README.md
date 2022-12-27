@@ -1,5 +1,7 @@
 # Bulk Spawner Editor Utility
 
+There is an alternate branch of this currently in testing, if you want to check it out you can take a look [here](https://github.com/gibbsly/bse/tree/entityless)
+
 ## General information
 This is a utility that adds a way to register and edit spawners in bulk using a carrot on a stick. To get the tool that registers spawners, use the command `/trigger bse.request`, and you will receive a carrot on a stick called "BSE tool".
 
