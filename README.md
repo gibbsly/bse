@@ -15,7 +15,7 @@ If there is an identical spawner in the system already, it will register this sp
 The spawner will gain a nametag that displays the ID. The text is visible if you are within 10 blocks of it with a debug stick in your inventory.
 
 ### Give
-If you right click a registered spawner it will give you the command block to place a new one. [[spawner item format here]](https://github.com/gibbsly/bse#spawner-item-format)
+If you right click a registered spawner it will give you the command block to place a new one. [[spawner item format here]](https://github.com/gibbsly/bse/tree/entityless#spawner-item-format)
 
 ### Update
 If you right click a registered spawner while sneaking, you can update all spawners of that id of to match this one. 
@@ -28,9 +28,9 @@ If you left click a spawner while sneaking it will remove that spawner from the 
 ## Request trigger
 There are a few things you can activate by triggering `bse.request` and setting it to a value
 ### Give spawner
-If you trigger a request to a valid spawner ID, you will receive a [command block to place a spawner with that ID](https://github.com/gibbsly/bse#spawner-item-format)
+If you trigger a request to a valid spawner ID, you will receive a [command block to place a spawner with that ID](https://github.com/gibbsly/bse/tree/entityless#spawner-item-format)
 ### Search
-If you trigger the value -53 you will run the [search function](https://github.com/gibbsly/bse#search-function)
+If you trigger the value -53 you will run the [search function](https://github.com/gibbsly/bse/tree/entityless#search-function)
 
 ## Other information
 ### Spawner item format
@@ -56,7 +56,7 @@ If you have anything you want to be added I can see if I can make it work, but I
 ### Search function
 This searches a selected area for spawners, you can select the area you wish to search by using a clock. Left clicking a block with a clock will set the first position and right clicking a block with a clock will set the second position. 
 
-Once you have made your selection you can run the command `/function bse:large_search` or [trigger a request](https://github.com/gibbsly/bse#request-trigger) at -59 again to run the scan. 
+Once you have made your selection you can run the command `/function bse:large_search` or [trigger a request](https://github.com/gibbsly/bse/tree/entityless#request-trigger) at -59 again to run the scan. 
 
 ### Uninstall
 To remove this pack from the world I recommend running the uninstall function (`/function bse:uninstall`) This removes the storage data as well as the scoreboards. When you run it be sure to close out of the world and delete the datapack. All marker entities will die by themselves, so you don't need to worry about extra entities. 
