@@ -38,6 +38,8 @@ scoreboard players operation total_chunks= bse.main *= sy= bse.temp
 scoreboard players operation total_chunks= bse.main *= sz= bse.temp
 
 #iterating
+data remove storage bse:search pos1
+data remove storage bse:search pos2
 execute unless entity 627365-0-f-0-1 run summon marker 29999999 0 6452069 {UUID:[I;6452069,15,0,1]}
 execute as 627365-0-f-0-1 run function bse:search/start
 
