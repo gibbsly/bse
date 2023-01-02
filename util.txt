@@ -11,3 +11,4 @@ rcp | remove current position in 'bse:temp pos' from currently selected spawner 
 ps  | places the currently selected spawner at this position
 pa  | (prime_all_spawners) sets the delay of all registered spawners to 0
 ua  | (unmark_all_spawners) removes all positions arrays and removes all "bse:id" values on spawners
+gs  | generates the spawner give item at bse:main item, requires id= bse.main score

@@ -2,6 +2,10 @@ tag @s remove bse.las
 tag @s remove bse.tool
 title @s actionbar ""
 
+execute if predicate bse:hse if score @s bse.id matches 0.. run function bse:player/pick_block_spawner
+execute if predicate bse:hse unless score @s bse.id matches 0.. run item replace entity @s weapon.mainhand with air
+scoreboard players reset @s bse.id
+
 execute if score @s bse.temp matches 00 run data merge entity 627365-0-0-0-10 {Pos:[29999999d,0d,6452069d]}
 execute if score @s bse.temp matches 01 run data merge entity 627365-0-0-0-11 {Pos:[29999999d,0d,6452069d]}
 execute if score @s bse.temp matches 02 run data merge entity 627365-0-0-0-12 {Pos:[29999999d,0d,6452069d]}

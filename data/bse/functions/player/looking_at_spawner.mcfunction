@@ -12,6 +12,9 @@ kill 627365-0-0-0-1
 execute store result score has_bse_id= bse.temp if data block ~ ~ ~ SpawnData.entity."bse:id"
 execute store result score alt= bse.temp if predicate bse:alt
 
+execute if score has_bse_id= bse.temp matches 1 store result score @s bse.id run data get block ~ ~ ~ SpawnData.entity."bse:id"
+execute if score has_bse_id= bse.temp matches 0 store result score @s bse.id run scoreboard players reset @s bse.id
+
 execute if score has_bse_id= bse.temp matches 0 run title @s actionbar [{"keybind":"key.use","color":"aqua"},{"text":" to register this spawner","color":"aqua"}]
 execute if score has_bse_id= bse.temp matches 1 if score alt= bse.temp matches 0 run title @s actionbar [{"text":"","color":"gray"},{"keybind":"key.use","color":"aqua"},{"text":" to get","color":"aqua"}," | ",[{"keybind":"key.sneak","color":"aqua"}," for more options"]]
 execute if score has_bse_id= bse.temp matches 1 if score alt= bse.temp matches 1 run title @s actionbar [{"text":"","color":"gray"},{"keybind":"key.use","color":"aqua"},{"text":" to update","color":"aqua"}," | ",[{"keybind":"key.attack","color":"aqua"}," to un-register"]]
