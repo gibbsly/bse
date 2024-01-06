@@ -10,7 +10,7 @@
 					]
 				},
 				"entity": {
-					"type": "minecraft:horse",
+					"type": "minecraft:interaction",
 					"nbt": "{Tags:[\"bse.horse\"]}"
 				}
 			}
