@@ -56,7 +56,7 @@ If you have anything you want to be added I can see if I can make it work, but I
 ### Search function
 This searches a selected area for spawners, you can select the area you wish to search by using a clock. Left clicking a block with a clock will set the first position and right clicking a block with a clock will set the second position. 
 
-Once you have made your selection you can run the command `/function bse:large_search` or [trigger a request](https://github.com/gibbsly/bse/tree/entityless#request-trigger) at -59 again to run the scan. 
+Once you have made your selection you can run the command `/function bse:search` or [trigger a request](https://github.com/gibbsly/bse/tree/entityless#request-trigger) at -59 again to run the scan. 
 
 ### Prime all
 Running the function `bse:prime_all_spawners` sets the delay of all registered spawners to 0.
