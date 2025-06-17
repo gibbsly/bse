@@ -1,7 +1,12 @@
 #getting status
-execute store result score spawner= bse.temp if block ~ ~ ~ spawner
-execute store result score has_bse_id= bse.temp if data block ~ ~ ~ SpawnData.entity."bse:id"
-execute if score has_bse_id= bse.temp matches 1 store result score bse_id= bse.temp run data get block ~ ~ ~ SpawnData.entity."bse:id"
+scoreboard players set spawner= bse.temp 0
+execute store result score spawner= bse.temp if block ~ ~ ~ #bse:spawners
+function bse:spawner/get_id
+
+# fix missing ids
+execute if score spawner= bse.temp matches 1 if score has_bse_id= bse.temp matches 0 if score @s bse.id matches 1.. run scoreboard players operation bse_id= bse.temp = @s bse.id
+execute if score spawner= bse.temp matches 1 if score has_bse_id= bse.temp matches 0 if score @s bse.id matches 1.. run function bse:spawner/set_id
+execute if score spawner= bse.temp matches 1 if score has_bse_id= bse.temp matches 0 if score @s bse.id matches 1.. run scoreboard players set has_bse_id= bse.temp 1
 
 #updating name
 execute if score spawner= bse.temp matches 0 run data modify entity @s CustomName set value {"text":"No spawner available!","color":"red"}

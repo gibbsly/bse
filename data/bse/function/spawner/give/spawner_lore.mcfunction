@@ -2,7 +2,7 @@
 
 ##generating text
 #ID and weight
-data modify block 29999999 1 6452069 front_text.messages[0] set value [{"translate":" Entity: %s, Weight: %s","color":"gray","italic":false,"with":[{"nbt":"spt[0].data.entity.id","storage":"bse:main","color":"green"},{"nbt":"spt[0].Weight","storage":"bse:main","color":"gold"}]}]
+data modify block 29999999 1 6452069 front_text.messages[0] set value [{"translate":" Entity: %s, Weight: %s","color":"gray","italic":false,"with":[{"nbt":"spt[0].data.entity.id","storage":"bse:main","color":"green"},{"nbt":"spt[0].weight","storage":"bse:main","color":"gold"}]}]
 data modify storage bse:main item.components.minecraft:lore append from block 29999999 1 6452069 front_text.messages[0]
 
 #name if available

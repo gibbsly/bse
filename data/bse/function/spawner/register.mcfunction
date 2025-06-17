@@ -1,4 +1,4 @@
-#copying spawner ad finding any duplicates
+#copying spawner and finding any duplicates
 function bse:util/ctc
 function bse:util/fd
 

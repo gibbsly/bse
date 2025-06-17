@@ -1,9 +1,8 @@
-function bse:util/si
 data modify storage bse:main current set from storage bse:main spawners[{selected:1b}].data
 
 #setting up item object
 data remove storage bse:main item
-data modify storage bse:main item set value {id:"minecraft:command_block",Count:1b,components:{"minecraft:block_entity_data":{auto:1b,Command:"function bse:spawner/place",LastExecution:0L,id:"minecraft:command_block"},display:{Name:"",Lore:[]}}}
+data modify storage bse:main item set value {id:"minecraft:command_block",Count:1b,components:{"minecraft:item_model":"minecraft:spawner","minecraft:enchantment_glint_override":true,"minecraft:block_entity_data":{auto:1b,Command:"function bse:spawner/place",LastExecution:0L,id:"minecraft:command_block"},display:{Name:"",Lore:[]}}}
 
 #grabbing requested id from current
 execute store result storage bse:main item.components.minecraft:block_entity_data.LastExecution long 1 run scoreboard players get id= bse.main
@@ -31,12 +30,11 @@ execute store result storage bse:main temps.1 int 1 run data get storage bse:mai
 execute store result storage bse:main temps.2 int 1 run data get storage bse:main current.SpawnCount
 data modify block 29999999 1 6452069 front_text.messages[0] set value [{"translate":" Max Nearby: %s, Count: %s","color":"gray","italic":false,"with":[{"nbt":"temps.1","storage":"bse:main","color":"gold"},{"nbt":"temps.2","storage":"bse:main","color":"gold"}]}]
 data modify storage bse:main item.components.minecraft:lore append from block 29999999 1 6452069 front_text.messages[0]
-data modify storage bse:main item.components.minecraft:lore append value [{"text":"List of spawnable entities:","color":"white","italic":false}]
 
 ##generating spawn potentials lore
+data modify storage bse:main item.components.minecraft:lore append value [{"text":"List of spawnable entities:","color":"white","italic":false}]
 data modify storage bse:main spt set value []
 data modify storage bse:main spt set from storage bse:main current.SpawnPotentials
-execute unless data storage bse:main spt[0] run data modify storage bse:main spt[].data set from storage bse:main current.SpawnData
 function bse:spawner/give/spawner_lore
 data remove storage bse:main temps
 data remove storage bse:main spt

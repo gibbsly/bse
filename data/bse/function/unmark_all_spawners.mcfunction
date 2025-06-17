@@ -10,5 +10,5 @@ scoreboard players set processed= bse.main 0
 execute unless entity 627365-0-f-0-1 run summon marker 29999999 0 6452069 {UUID:[I;6452069,15,0,1]}
 execute as 627365-0-f-0-1 run function bse:util/ua/start
 
-#removing all positions 
+#removing all positions
 data modify storage bse:main spawners[].positions set value []

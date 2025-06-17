@@ -3,6 +3,7 @@ function bse:unmark_all_spawners
 
 #removing scoreboards
 scoreboard objectives remove bse.request
+#scoreboard objectives remove bse.settings
 scoreboard objectives remove bse.main
 scoreboard objectives remove bse.temp
 scoreboard objectives remove bse.num
@@ -27,6 +28,7 @@ data remove storage bse:temp positions
 data remove storage bse:temp check
 data remove storage bse:temp marker_pos
 data remove storage bse:temp hold
+data remove storage bse:text settings
 
 #removing horses
 schedule clear bse:spawn_horses

@@ -1,0 +1,1 @@
+$data modify storage bse:main spawners[{id:{int:$(id)},selected:0b}].selected set value 1b

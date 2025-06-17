@@ -1,1 +1,1 @@
-summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Tags:["bse.marker"],Duration:10}
+summon area_effect_cloud ~ ~ ~ {Particle:{type:"block",block_state:"minecraft:air"},Tags:["bse.marker"],Duration:10,Radius:0.5f}

@@ -1,4 +1,9 @@
 setblock ~ ~ ~ acacia_leaves
-setblock ~ ~ ~ spawner
+
+execute if data storage bse:main spawners[{selected:1b}].id{type:0} run setblock ~ ~ ~ spawner
+execute if data storage bse:main spawners[{selected:1b}].id{type:1} run setblock ~ ~ ~ trial_spawner
+
 data modify block ~ ~ ~ {} merge from storage bse:main spawners[{selected:1b}].data
-data modify block ~ ~ ~ SpawnData.entity."bse:id" set from storage bse:main spawners[{selected:1b}].id.int
+
+execute store result score bse_id= bse.temp run data get storage bse:main spawners[{selected:1b}].id.int
+function bse:spawner/set_id

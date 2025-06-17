@@ -7,11 +7,11 @@ particle soul_fire_flame ~-0.5 ~-0.5 ~0.5 0 0 0 0 1 normal @s
 particle soul_fire_flame ~0.5 ~-0.5 ~-0.5 0 0 0 0 1 normal @s
 particle soul_fire_flame ~-0.5 ~-0.5 ~-0.5 0 0 0 0 1 normal @s
 
-execute store result score has_bse_id= bse.temp if data block ~ ~ ~ SpawnData.entity."bse:id"
-execute store result score alt= bse.temp if predicate bse:alt
-
-execute if score has_bse_id= bse.temp matches 1 store result score @s bse.id run data get block ~ ~ ~ SpawnData.entity."bse:id"
+function bse:spawner/get_id
+execute if score has_bse_id= bse.temp matches 1 run scoreboard players operation @s bse.id = bse_id= bse.temp
 execute if score has_bse_id= bse.temp matches 0 store result score @s bse.id run scoreboard players reset @s bse.id
+
+execute store result score alt= bse.temp if predicate bse:alt
 
 execute if score has_bse_id= bse.temp matches 0 run title @s actionbar [{"keybind":"key.use","color":"aqua"},{"text":" to register this spawner","color":"aqua"}]
 execute if score has_bse_id= bse.temp matches 1 if score alt= bse.temp matches 0 run title @s actionbar [{"text":"","color":"gray"},{"keybind":"key.use","color":"aqua"},{"text":" to get","color":"aqua"}," | ",[{"keybind":"key.sneak","color":"aqua"}," for more options"]]
@@ -37,8 +37,9 @@ execute if score @s bse.temp matches 14 run tp 627365-0-0-0-1E ~ ~-0.75 ~
 execute if score @s bse.temp matches 15 run tp 627365-0-0-0-1F ~ ~-0.75 ~
 
 #input actions
-execute if entity @s[tag=bse.attack] if score alt= bse.temp matches 1 unless data storage bse:main spawners[0] run data remove block ~ ~ ~ SpawnData.entity."bse:id"
+execute if entity @s[tag=bse.attack] if score alt= bse.temp matches 1 unless data storage bse:main spawners[0] run function bse:spawner/remove_id
 execute if entity @s[tag=bse.attack] if score alt= bse.temp matches 1 if data storage bse:main spawners[0] run function bse:spawner/remove_current_location_from_list
+
 execute if entity @s[tag=bse.click] run function bse:player/click_spawner
 
 kill 627365-0-0-0-1

@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ spawner run data remove block ~ ~ ~ SpawnPotentials[0].data.entity."bse:id"
+execute if block ~ ~ ~ trial_spawner run data remove block ~ ~ ~ normal_config.spawn_potentials[0].data.entity."bse:id"

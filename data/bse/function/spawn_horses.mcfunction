@@ -1,19 +1,20 @@
-execute unless entity 627365-0-0-0-10 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,16],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-11 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,17],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-12 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,18],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-13 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,19],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-14 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,20],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-15 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,21],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-16 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,22],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-17 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,23],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-18 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,24],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-19 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,25],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-1A run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,26],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-1B run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,27],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-1C run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,28],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-1D run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,29],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-1E run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,30],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
-execute unless entity 627365-0-0-0-1F run summon interaction 29999999 0 6452069 {Tags:[bse.horse],DeathLootTable:"",Team:"bse_nocul",UUID:[I;6452069,0,0,31],Invulnerable:1b,Silent:1b,NoAI:1b,width:1.25f,height:1.5f,response:1b}
+# supports up to 16 players looking at spawners simultaneously
+execute unless entity 627365-0-0-0-10 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,16],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-11 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,17],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-12 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,18],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-13 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,19],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-14 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,20],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-15 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,21],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-16 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,22],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-17 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,23],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-18 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,24],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-19 run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,25],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-1A run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,26],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-1B run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,27],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-1C run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,28],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-1D run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,29],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-1E run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,30],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
+execute unless entity 627365-0-0-0-1F run summon interaction 29999999 0 6452069 {Tags:[bse.horse],UUID:[I;6452069,0,0,31],Invulnerable:1b,Silent:1b,width:1.25f,height:1.5f,response:1b}
 
 #determining y min and max
 execute unless entity 627365-0-f-0-1 run summon marker 29999999 0 6452069 {UUID:[I;6452069,15,0,1]}
